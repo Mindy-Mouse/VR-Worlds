@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <!-- Image Source: Hangglide. Equirectangular Earth. 2004. Flickr. Web. 29, June 2017. -->
+            <!-- Direct Link: https://www.flickr.com/photos/hangglide/163773711-->
+            <a-sphere 
+                src="https://codehs.com/uploads/a95cf62d6f465f551ce9067e72ccb3e4"
+                radius="100"
+                position="0 20 -300"
+                animation ="
+                    property: rotation;
+                    from: 0 0 0;
+                    to: 0 360 0;
+                    dur: 10000;
+                    startEvents: click;
+                    ">
+
+            </a-sphere>
+            
+            
+            <a-camera>
+                <a-cursor fuse="true" fuse-timout="1000"></a-cursor>
+            </a-camera>
+            
+            <!-- Image Source: Roanish. Milky Way 01. 2011. Flickr. Web. 29, June 2017. -->
+            <!-- Direct Link: https://www.flickr.com/photos/roanish/5968666848-->
+            <a-sky src="https://codehs.com/uploads/b4cc1ff2d9a21e283f70af0e74cdd2e5"></a-sky>
+        </a-scene>
+    </body>
+</html>

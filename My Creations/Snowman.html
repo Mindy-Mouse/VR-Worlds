@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+        
+        <a-sky color="#b3ecff"></a-sky>
+        
+        <a-plane position="0 0 -5" rotation="-90 0 0" width="40" height="40" color="#ffffcc"></a-plane>
+        
+        
+        <!-- snowman -->
+        <a-sphere position="0 1 -5" radius="1" color="#f6f6ee"></a-sphere>
+        <a-sphere position="0 2.35 -5" radius=".68" color="#f6f6ee"></a-sphere>
+        <a-sphere position="0 3.25 -5" radius=".45" color="#f6f6ee"></a-sphere>
+        
+        <!-- buttons -->
+        <a-sphere position="0 2.54991 -4.32726" radius=".1" color="black"></a-sphere>
+        <a-sphere position="0 2.0735 -4.33016" radius=".1" color="black"></a-sphere>
+        <a-sphere position="0 1.49963 -4.12203" radius=".1" color="black"></a-sphere>
+        
+        <!-- eyes -->
+        <a-sphere position="0.2 3.3 -4.6" radius=".05" color="black"></a-sphere>
+        <a-sphere position="-.2 3.3 -4.6" radius=".05" color="black"></a-sphere>
+        
+        <!--nose-->
+        <a-cone color="orange" radius-bottom=".05" radius-top="0" height=".5" position="0 3.15 -4.35" rotation="90 0 0"></a-cone>
+        
+        <!--arms-->
+        <a-cylinder position="1 2.82 -5" radius="0.05" height="1" color="saddlebrown" rotation="0 0 -45"></a-cylinder>
+        <a-cylinder position="-1 2.82 -5" radius="0.05" height="1" color="saddlebrown" rotation="0 0 -135"></a-cylinder>
+        
+        </a-scene>
+    </body>
+</html>

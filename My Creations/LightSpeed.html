@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+        <title>Flung into Space</title>
+    </head>
+    <body>
+        <a-scene>
+            <!-- Set the sky -->
+            <a-sky color="black"></a-sky>
+            
+            <!-- Stars -->
+            <a-sphere position="0 1 -90" radius=".5" color="yellow"
+                animation="
+                property: position;
+                from: 0 1 -90;
+                to: 0 20 15;
+                duration: 11000;
+                loop: true
+                "
+            ></a-sphere>
+            
+            <a-sphere position="0 -2 -75" radius=".5" color="yellow"
+                animation="
+                property: position;
+                from: 0 -2 -75;
+                to: 0 -25 30;
+                duration: 6000;
+                loop: true
+                "
+            ></a-sphere>
+            
+            <a-sphere position="-2 1 -80" radius=".5" color="yellow"
+                animation="
+                property: position;
+                from: -2 1 -80;
+                to: -2 30 100;
+                duration: 8000;
+                loop: true
+                "
+            ></a-sphere>
+            
+            <a-sphere position="-4 -3 -80" radius=".5" color="yellow"
+                animation="
+                property: position;
+                from: -4 -3 -80;
+                to: -4 -5 10;
+                duration: 10000;
+                loop: true
+                "
+            ></a-sphere>
+            
+            <a-sphere position="3 1 -75" radius=".5" color="yellow"
+                animation="
+                property: position;
+                from: 3 1 -75;
+                to: 3 10 30;
+                duration: 13000;
+                loop: true
+                "
+            ></a-sphere>
+            
+            <a-sphere position="5 -2 -90" radius=".5" color="yellow"
+                animation="
+                property: position;
+                from: 5 -2 -90;
+                to: 5 -15 20;
+                duration: 15000;
+                loop: true
+                "
+            ></a-sphere>
+            
+            <a-sphere position="-5 -1 -75" radius=".5" color="yellow"
+                animation="
+                property: position;
+                from: -5 -1 -75;
+                to: -10 3 20;
+                duration: 15000;
+                loop: true
+                "
+            ></a-sphere>
+            
+            <a-sphere position="6 -2 -90" radius=".5" color="yellow"
+                animation="
+                property: position;
+                from: 6 -2 -90;
+                to: 10 5 20;
+                duration: 15000;
+                loop: true
+                "
+            ></a-sphere>
+           
+            
+        </a-scene>
+    </body>
+</html>

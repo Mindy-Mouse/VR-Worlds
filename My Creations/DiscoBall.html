@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+        
+        <a-entity position="0 0 5">
+	        <a-camera>
+	            <a-cursor fuse="true" fuse-timeout="500"></a-cursor>
+	        </a-camera>
+        </a-entity>
+        
+        <a-sky color="#333333"> </a-sky>
+        
+        <a-cylinder color="darkgray" height="12" radius=".1" position="0 0 0"></a-cylinder>
+        
+        <a-cone color="dodgerblue" radius-bottom="1" radius-top="0" height="4" position="2.5 .5 0" rotation="0 0 130" visible="false" 
+            animation__1="
+            property: rotation;
+            from: 0 -0 130;
+            to: 0 -0 30;
+            dir: alternate;
+            easing: linear;
+            loop: true;
+            "
+            animation__2="
+            property: visible;
+            from: false;
+            to: true;
+            startEvents: click;
+            "
+        ></a-cone>
+        
+        
+        <a-cone color="gold" radius-bottom="1" radius-top="0" height="4" position="-2.5 .5 0" rotation="0 0 230" visible="false"
+            animation__1="
+            property: rotation;
+            from: 0 -0 230;
+            to: 0 -0 330;
+            dir: alternate;
+            easing: linear;
+            loop: true;
+            "
+            animation__2="
+            property: visible;
+            from: false;
+            to: true;
+            startEvents: click;
+            "
+        ></a-cone>
+        
+        
+        <a-cone color="lime" radius-bottom="1" radius-top="0" height="4" position="2.5 3 0" rotation="0 0 160" visible="false"
+            animation__1="
+            property: rotation;
+            from: 0 -0 160;
+            to: 0 -0 50;
+            dir: alternate;
+            easing: linear;
+            loop: true;
+            "
+            animation__2="
+            property: visible;
+            from: false;
+            to: true;
+            startEvents: click;
+            "
+        ></a-cone>
+        
+        
+        <a-cone color="magenta" radius-bottom="1" radius-top="0" height="4" position="-2.5 3 0" rotation="0 0 200" visible="false"
+            animation__1="
+            property: rotation;
+            from: 0 -0 200;
+            to: 0 -0 310;
+            dir: alternate;
+            easing: linear;
+            loop: true;
+            "
+            animation__2="
+            property: visible;
+            from: false;
+            to: true;
+            startEvents: click;
+            "
+        ></a-cone>
+        
+        
+        <a-sphere radius="1" position="0 -1 0"  
+            animation__1="
+            property: position;
+            from: 0 -1 0;
+            to: 0 4 0;
+            dir: alternate;
+            easing: linear;
+            loop: true;
+            "
+            animation__2="
+            property: color;
+            from: rgb(255, 255, 255);
+            to: rgb(255, 72, 0);
+            dur: 2000;
+            dir: alternate;
+            loop: true;
+            easing: linear;
+            "
+            animation__3="
+            property: color;
+            from: rgb(255, 72, 0);
+            to: rgb(117, 26, 255);
+            dur: 2000;
+            dir: alternate;
+            loop: true;
+            easing: linear;
+            delay: 2000;
+            "
+        ></a-sphere>
+        
+        <!--
+        
+        
+        -->
+        
+        
+        
+        </a-scene>
+    </body>
+</html>
